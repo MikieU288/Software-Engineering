@@ -1,8 +1,8 @@
-#2.1.1.19
-#(1)
+#(1) 2.1.1.19
 print("   *\n  * *\n *   *\n*     *\n*** ***\n *   *\n *   *\n *****")
 #or
 print('   *','  * *',' *   *','*     *','*** ***',' *   *',' *   *',' *****', sep='\n')
+
 #(2)
 print("   *")
 
@@ -35,7 +35,8 @@ print(" *   *")
 print(" *   *")
 
 print(" *****")
-(3)
+
+#(3)
 print("   *    " * 2)
 
 print("  * *   " * 2)
@@ -52,5 +53,172 @@ print(" *   *  " * 2)
 
 print(" *****  " * 2)
 
-(4)
+#(4)
+#This shows errors with a " removed
+#print(" *")
 #
+#print(" * *")
+#
+#print(" * *")
+#
+#print( * *")
+#
+#print("*** ***")
+#
+#print(" * *")
+#
+#print(" * *")
+#
+#print(" *****")
+
+#(5)
+#This shows errors with a ( removed
+#print(" *")
+#
+#print(" * *")
+#
+#print(" * *")
+#
+#print(" * *")
+#
+#print"*** ***")
+#
+#print(" * *")
+#
+#print(" * *")
+#
+#print(" *****")
+
+#(6)
+#This shows errors with a Print instead of print
+#print(" *")
+#
+#print(" * *")
+#
+#print(" * *")
+#
+#print(" * *")
+#
+#Print("*** ***")
+#
+#print(" * *")
+#
+#print(" * *")
+#
+#print(" *****")
+
+#(7)
+#This shows a combination of ' an "
+print("   *")
+
+print('  * *')
+
+print(" *   *")
+
+print('*     *')
+
+print("*** ***")
+
+print(' *   *')
+
+print(" *   *")
+
+print(' *****')
+
+#(8) 2.2.1.11
+print('"I\'m"')
+
+print('""learning""')
+
+print('"""Python"""')
+
+#or
+
+print('"I\'m"\n""learning""\n"""Python"""')
+
+#(9) 2.4.1.7
+john = 3
+
+mary = 5
+
+adam = 6
+
+#john has 3 apples, mary has 5 apples and adam has 6 apples
+
+print(john, mary, adam, sep=', ')
+
+#seperates each owners apple allocation with a comma
+
+total_apples = john + mary + adam
+
+#adds together each persons apples
+
+print(total_apples)
+
+#displays total amount of apples
+
+average_apples = (john + mary + adam) / 3
+
+#avereges the apples with a float or // 3 for a whole number (rounded down)
+
+print(average_apples)
+
+print("Total number of apples", total_apples, sep=' = ')
+
+#(10) 2.4.1.9
+kilometers = 12.25
+
+miles = 7.38
+
+miles_to_kilometers = miles * 1.61
+
+kilometers_to_miles = kilometers / 1.61
+
+print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers")
+
+print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
+
+#and
+
+kilometers = 12.25
+
+miles = 7.38
+
+miles_to_kilometers = miles * 1.61
+
+kilometers_to_miles = kilometers / 1.61
+
+miles_to_furlongs = miles / 4
+
+kilometers_to_furlongs = (kilometers / 1.61) / 4
+
+print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers", "and", round(miles_to_furlongs, 2), "furlongs")
+
+print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles", "and", round(kilometers_to_furlongs, 2), "furlongs")
+
+#(11) 2.4.1.10
+x = 0
+
+x = float(x)
+
+y = 3*(x**3) - 2*(x**2) + 3*x - 1
+
+#3x3 - 2x2 + 3x - 1
+
+print("y =", y)
+
+x = 1
+
+x = float(x)
+
+y = 3*(x**3) - 2*(x**2) + 3*x - 1
+
+print("y =", y)
+
+x = -1
+
+x = float(x)
+
+y = 3*(x**3) - 2*(x**2) + 3*x - 1
+
+print("y =", y)
