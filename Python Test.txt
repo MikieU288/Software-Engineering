@@ -253,15 +253,15 @@ y = 1. /(x + 1. / (x + 1. / (x + 1/x)))
 print("y =", y)
 
 #14 2.6.1.11
-#Answer off Netacad
-hour = int(input("Starting time (hours): "))
-mins = int(input("Starting time (minutes): "))
-dura = int(input("Event duration (minutes): "))
-mins = mins + dura # find a total of all minutes
-hour = hour + mins // 60 # find a number of hours hidden in minutes and update the hour
-mins = mins % 60 # correct minutes to fall in the (0..59) range
-hour = hour % 24 # correct hours to fall in the (0..23) range
-print(hour, ":", mins, sep='')
+hour = int(input("Starting time (hours): ")) #int requires a number (hour) and input requires user input e.g. 13
+mins = int(input("Starting time (minutes): ")) # int requires a number (mins) and input requires user input e.g. 13 e.g. 10
+dura = int(input("Event duration (minutes): ")) # int requires a number (dura) and input requires user input e.g. 45
+
+mins = mins + dura # sum of mins + dura e.g 10 + 45 = 55
+hour = hour + mins // 60 # floor division to calculate the number of hours hidden in the minutes and update the hour e.g. 13 + (55 // 60) = 13 [55 // 60 = 0.9166]
+mins = mins % 60 # modular divion to ensure the minutes fall within the (0..59) range e.g. 55 % 60 = 55
+hour = hour % 24 # correct hours to fall in the (0..23) range e.g. 13 % 24 = 13
+print(hour, ":", mins, sep='') # 13:55
 
 
 
