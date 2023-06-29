@@ -3,3 +3,37 @@
 print("   *\n  * *\n *   *\n*     *\n\n*** ***\n *   *\n *   *\n *****")
 #or
 print('   *','  * *',' *   *','*     *','*** ***',' *   *',' *****', sep='\n')
+#(2)
+print("   *")
+
+print("  * *")
+
+print(" *   *")
+
+print("*     *")
+
+print("*** ***")
+
+print(" *   *")
+
+print(" *   *")
+
+print(" *   *")
+
+print(" *   *")
+
+print(" *   *")
+
+print(" *   *")
+
+print(" *   *")
+
+print(" *   *")
+
+print(" *   *")
+
+print(" *   *")
+
+print(" *****")
+
+(3)
