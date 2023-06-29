@@ -223,6 +223,27 @@ y = 3*(x**3) - 2*(x**2) + 3*x - 1
 
 print("y =", y)
 
+#12 2.6.1.9
+
+val1 = float (input ("enter a number: ")) #input first variable
+val2 = float (input ("enter a number: ")) #input second variable
+#int = a whole number and float = with decimals
+#Define the variables
+addition = val1 + val2
+subtraction = val1 - val2
+multiplication = val1 * val2
+division = val1 / val2
+exponent = val1 ** val2
+floor = val1 // val2
+
+#Print sums
+print (val1, "+", val2, "=", addition)
+print (val1, "-", val2, "=", subtraction)
+print (val1, "X", val2, "=", multiplication)
+print (val1, "divided by", val2, "=", division)
+print (val1, "to the power of", val2, "=", exponent)
+print (val1, "divided by - floor division", val2, "=", floor)
+print ("\nThats all, folks!")#\n prints the string on a new line
 
 
 
