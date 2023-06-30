@@ -278,29 +278,31 @@ else:#if input is anything else it displays "Spathiphyllum! Not", name + "!"
     print("Spathiphyllum! Not", flower + "!")
 
 #3.1.1.11
-income = float(input("Enter the annual income: "))
+income = float(input("Enter the annual income: "))#float requests a number [provides a decimal] from user for annual income
 
-if income < 85528:
-	tax = income * 0.18 - 556.02
+if income < 85528:#if income is less than 85528
+	tax = income * 0.18 - 556.02#tax equals 18 percent of income minus 556.02 thalers
 else:
-	tax = (income - 85528) * 0.32 + 14839.02
+	tax = (income - 85528) * 0.32 + 14839.02#income equal or greater than 85528, any amount over 85528 is taxed at 32 percent plus 14839.02 thalers
 
-if tax < 0.0:
+if tax < 0.0:#if tax is equal or less than 0.0, tax will equal 0.0
 	tax = 0.0
 
-tax = round(tax, 0)
+tax = round(tax, 0)#rounds to 0 decimal place
 print("The tax is:", tax, "thalers")
 
-jury = (input("Have you done jury service this year?: "))
-if jury == "Yes":
+jury = (input("Have you done jury service this year?: "))#string requests text [to answer the question] from user
+if jury == "Yes":#if yes, Yes, YES, Y or y - will output the tax is: tax divided by 2 (e.g. 8755.0)
     print("The tax is:", tax / 2)
 elif jury == "yes":
+    print("The tax is:", tax / 2)
+elif jury == "YES":
     print("The tax is:", tax / 2)
 elif jury == "Y":
     print("The tax is:", tax / 2)
 elif jury == "y":
     print("The tax is:", tax / 2)
-else:
+else:#For any text other than yes.... - will output the tax is: tax (e.g. 8755.0
     print("The tax is:", tax, "thalers")
 
 
