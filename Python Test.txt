@@ -263,10 +263,45 @@ mins = mins % 60 # modular divion to ensure the minutes fall within the (0..59) 
 hour = hour % 24 # correct hours to fall in the (0..23) range e.g. 13 % 24 = 13
 print(hour, ":", mins, sep='') # 13:55
 
+#3.1.1.4
+n = int(input("Enter a number: "))
+print(n >= 100)
 
+#3.1.1.10
+flower = input("Enter flower name: ")#spathiphyllum - pelargonium - Spathiphyllum
 
+if flower == "Spathiphyllum":#if input is equal to Spathiphyllum it displays "Yes - Spathiphyllum is the best plant ever!"
+    print("Yes - Spathiphyllum is the best plant ever!")
+elif flower == "spathiphyllum":#if input is equal to spathiphyllum it displays "No, I want a big Spathiphyllum!"
+    print("No, I want a big Spathiphyllum!")
+else:#if input is anything else it displays "Spathiphyllum! Not", name + "!"
+    print("Spathiphyllum! Not", flower + "!")
 
+#3.1.1.11
+income = float(input("Enter the annual income: "))
 
+if income < 85528:
+	tax = income * 0.18 - 556.02
+else:
+	tax = (income - 85528) * 0.32 + 14839.02
+
+if tax < 0.0:
+	tax = 0.0
+
+tax = round(tax, 0)
+print("The tax is:", tax, "thalers")
+
+jury = (input("Have you done jury service this year?: "))
+if jury == "Yes":
+    print("The tax is:", tax / 2)
+elif jury == "yes":
+    print("The tax is:", tax / 2)
+elif jury == "Y":
+    print("The tax is:", tax / 2)
+elif jury == "y":
+    print("The tax is:", tax / 2)
+else:
+    print("The tax is:", tax, "thalers")
 
 
 
