@@ -305,5 +305,10 @@ elif jury == "y":
 else:#For any text other than yes.... - will output the tax is: tax (e.g. 8755.0
     print("The tax is:", tax, "thalers")
 
-
+#Alternatively
+#jury = (input("Have you done jury service this year?: "))#string requests text [to answer the question] from user
+#if jury == "Yes" or jury == "yes" or jury == "YES" or jury == "Y" or jury == "y":#if yes, Yes, YES, Y or y - will output the tax is: tax divided by 2 (e.g. #8755.0)
+#    print("The tax is:", tax / 2)
+#else:#For any text other than yes.... - will output the tax is: tax (e.g. 8755.0
+#    print("The tax is:", tax, "thalers")
 
