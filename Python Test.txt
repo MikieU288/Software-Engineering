@@ -425,5 +425,37 @@ for letter in user_word:
         word_without_vowels += letter#Gregory becomes GRGRY because the vowels have been removed + the remaining letters get assigned to the empty string (word_without_vowels)
 print(word_without_vowels)
 
+#3.2.1.14 Pyramid Exercise
+blocks = int(input("Enter the number of blocks: "))#User inputs the number of blocks
+
+height = 0#Each time the pyramaid gets higher
+in_layer = 1#A block is added to each layer
+while in_layer <= blocks:#While the layer blocks equals less than the user input blocks
+    height += 1#Add 1 to the height
+    blocks -= in_layer#And remove 1 (1 = in_layer) block from the user input
+    in_layer += 1#Add 1 to the layer
+
+print("The height of the pyramid:", height)
+
+
+#3.2.1.15 - Hypothesis
+c0 = int(input("Enter c0: "))
+
+if c0 > 1:
+	steps = 0
+	while c0 != 1:
+		if c0 %2 != 0:
+			cnew = 3 * c0 + 1
+		else:
+			cnew = c0 // 2
+		print(c0)
+		c0 = cnew
+		steps += 1
+	print("steps =",steps)
+else:
+	print("Bad c0 value")
+
+
+
 
 
