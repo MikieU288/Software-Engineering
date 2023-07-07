@@ -455,6 +455,35 @@ if c0 > 1:
 else:
 	print("Bad c0 value")
 
+#3.4.1.13 List - Beatles
+
+# step 1:
+Beatles = []
+print("Step 1:", Beatles)
+
+# step 2:
+
+Beatles.append("John Lennon")#Appends string to the list
+Beatles.append("Paul McCartney")
+Beatles.append("George Harrison")
+print("Step 2:", Beatles)
+
+# step 3:
+for members in range(2):
+    Beatles.append(input("New band member: "))
+print("Step 3:", Beatles)
+
+# step 4:
+del Beatles[-1]#Removes the last item in the Beatles list
+del Beatles[-1]
+print("Step 4:", Beatles)
+
+# step 5:
+Beatles.insert(0, "RingoStarr")#Places RingoStarr as the first entry into the list
+print("Step 5:", Beatles)
+print("The Fab:",len(Beatles))#Displays The Fab and length in number of the Beatles list
+
+#3.5.1.3 Sorting lists - Bubble
 
 
 
