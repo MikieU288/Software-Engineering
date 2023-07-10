@@ -485,6 +485,27 @@ print("The Fab:",len(Beatles))#Displays The Fab and length in number of the Beat
 
 #3.5.1.3 Sorting lists - Bubble
 
+#3.6.1.9 Operating with lists -  basic
+#Scenario
+#Imagine a list - not very long, not very complicated, just a simple list containing some integer numbers. Some of these numbers may be repeated, and this is the clue. We don't want any repetitions. We want them #to be removed.
+#
+#Your task is to write a program which removes all the number repetitions from the list. The goal is to have a list in which all the numbers appear not more than once.
+#
+#Note: assume that the source list is hard-coded inside the code - you don't have to enter it from the keyboard. Of course, you can improve the code and add a part that can carry out a conversation with the user #and obtain all the data from her/him.
+#
+#Hint: we encourage you to create a new list as a temporary work area - you don't need to update the list in situ.
+#
+#We've provided no test data, as that would be too easy. You can use our skeleton instead.
+
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+temp_list = []
+for number in my_list:  # For all the numbers in my_list
+	if number not in temp_list:  # If number is not in new list, avoids juplication
+		temp_list.append(number)  # Append/place number from my_list into temp_list.
+my_list = temp_list[:]  # Makes my_list contain temp_list contents
+print("The list without duplication:")
+print(my_list)
+
 
 
 
